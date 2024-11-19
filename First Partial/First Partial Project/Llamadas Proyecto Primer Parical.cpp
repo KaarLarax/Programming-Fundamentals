@@ -12,15 +12,15 @@ using namespace std;
 
 int main()
 {///inicia el programa
-    setlocale(LC_CTYPE, "Spanish" ); ///cambiar la region a español
+    setlocale(LC_CTYPE, "Spanish" ); ///cambiar la region a espaÃ±ol
     system( "color 0B" ); ///cambiar el color de la consola
 
    ///opciones para el menu
     cout << "*******************************" << endl;
     cout << "****      LLAMADAS LARA    ****" << endl;
-    cout << "**** 12) América del Norte ****" << endl;
-    cout << "**** 15) América Central   ****" << endl;
-    cout << "**** 18) América del Sur   ****" << endl;
+    cout << "**** 12) AmÃ©rica del Norte ****" << endl;
+    cout << "**** 15) AmÃ©rica Central   ****" << endl;
+    cout << "**** 18) AmÃ©rica del Sur   ****" << endl;
     cout << "**** 19) Europa            ****" << endl;
     cout << "**** 13) Asia              ****" << endl;
     cout << "****  0) No llamar         ****" << endl;
@@ -54,7 +54,7 @@ int main()
             case 15:///Se realiza la llamada hacia America central
             system("cls");
             system( "color 02" ); ///cambiar el color de la consola
-            cout << "Usted esta marcando a América Central" << endl;
+            cout << "Usted esta marcando a AmÃ©rica Central" << endl;
             cout << "Ingrese el tiempo de la duracion de la llamada en minutos: "; cin >> tiempo; cout << endl;
             if (cin.fail() or tiempo<=0) {
                 cout << "Los minutos son incorrectos, revisar porfavor " << endl;
@@ -68,7 +68,7 @@ int main()
         case 18:///Se realiza la llamada hacia America del Sur
             system("cls");
             system( "color 03" ); ///cambiar el color de la consola
-            cout << "Usted esta marcando a América del Sur" << endl;
+            cout << "Usted esta marcando a AmÃ©rica del Sur" << endl;
             cout << "Ingrese el tiempo de la duracion de la llamada en minutos: "; cin >> tiempo; cout << endl;
             if (cin.fail() or tiempo<=0) {
                 cout << "Los minutos son incorrectos, revisar porfavor " << endl;
