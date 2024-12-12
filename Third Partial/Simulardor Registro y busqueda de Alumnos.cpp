@@ -36,10 +36,10 @@ int main(){
     consola();
     cout << endl << "|----------- ARREGLOS DE ESTRUCTURAS -----------|" << endl;
     cout << endl << "\t|----------- MENU -----------|" << endl;
-    cout << "\t V) Mostrar la información" << endl;
+    cout << "\t V) Mostrar la informaciÃ³n" << endl;
     cout << "\t N) Buscar por nombre" << endl;
-    cout << "\t T) Buscar por número telefónico" << endl;
-    cout << "\t C) Buscar por número de cuenta" << endl;
+    cout << "\t T) Buscar por nÃºmero telefÃ³nico" << endl;
+    cout << "\t C) Buscar por nÃºmero de cuenta" << endl;
     cout << "\t Q) Salir" << endl;
     cin >> op;
     switch(op){
@@ -59,7 +59,7 @@ int main(){
             char b_tel[15];
             cout << endl << "|----------- BUSCAR POR NUMERO TELEFONICO -----------|" << endl;
             cin.clear(); cin.ignore();
-            cout << endl << "   -> Ingresa el número telefónico: ";
+            cout << endl << "   -> Ingresa el nÃºmero telefÃ³nico: ";
             cin.getline(b_tel, 15);
             busca_telefono(b_tel, lcc);
             break;
@@ -67,7 +67,7 @@ int main(){
             int b_cuenta;
             cout << endl << "|----------- BUSCAR POR NUMERO DE CUENTA -----------|" << endl;
             cin.clear(); cin.ignore();
-            cout << endl << "   -> Ingresa el número de cuenta: ";
+            cout << endl << "   -> Ingresa el nÃºmero de cuenta: ";
             cin >> b_cuenta;
             busca_ncuenta(b_cuenta, lcc);
             break;
@@ -77,7 +77,7 @@ int main(){
             exit(-1);
             break;
         default:
-            cout << endl << " La opción no es válida..." << endl;
+            cout << endl << " La opciÃ³n no es vÃ¡lida..." << endl;
             break;
     }
     return 0;
@@ -93,9 +93,9 @@ void ver_info_arr(struct Alumno2 lcc[5]){
         cout << "\t Fecha de ingreso: " << lcc[i].fecha_ing << endl;
         cout << "\t Semestre: " << lcc[i].sem2 << endl;
         cout << "\t Grupo: " << lcc[i].gpo2 << endl;
-        cout << "\t Número de telefono: " << lcc[i].telefono << endl;
+        cout << "\t NÃºmero de telefono: " << lcc[i].telefono << endl;
         cout << "\t Correo: " << lcc[i].correo << endl;
-        cout << "\t Número asignado: " << lcc[i].num_asig << endl;
+        cout << "\t NÃºmero asignado: " << lcc[i].num_asig << endl;
     }
 }
 
@@ -109,9 +109,9 @@ void busca_nombre(char b_nom[50], struct Alumno2 lcc[50]){
             cout << "\t Nombre: " << lcc[j].nombre2 << endl;
             cout << "\t Semestre: " << lcc[j].sem2 << endl;
             cout << "\t Grupo: " << lcc[j].gpo2 << endl;
-            cout << "\t Número de telefono: " << lcc[j].telefono << endl;
+            cout << "\t NÃºmero de telefono: " << lcc[j].telefono << endl;
             cout << "\t Correo: " << lcc[j].correo << endl;
-            cout << "\t Número asignado: " << lcc[j].num_asig << endl;
+            cout << "\t NÃºmero asignado: " << lcc[j].num_asig << endl;
             break;
         } else {
             ba =  false;
@@ -134,16 +134,16 @@ void busca_telefono(char b_tel[15], struct Alumno2 lcc[15]){
             cout << "\t Nombre: " << lcc[k].nombre2 << endl;
             cout << "\t Semestre: " << lcc[k].sem2 << endl;
             cout << "\t Grupo: " << lcc[k].gpo2 << endl;
-            cout << "\t Número de telefono: " << lcc[k].telefono << endl;
+            cout << "\t NÃºmero de telefono: " << lcc[k].telefono << endl;
             cout << "\t Correo: " << lcc[k].correo << endl;
-            cout << "\t Número asignado: " << lcc[k].num_asig << endl;
+            cout << "\t NÃºmero asignado: " << lcc[k].num_asig << endl;
             break;
         } else {
             ba =  false;
         }
     }
     if(ba == false){
-        cout << endl << "   -> El número de telefono que ingresaste no existe..." << endl;
+        cout << endl << "   -> El nÃºmero de telefono que ingresaste no existe..." << endl;
     } else {
         cout << endl << "   -> Registro encontrado..." << endl;
     }
@@ -158,16 +158,16 @@ void busca_ncuenta(int b_cuenta, struct Alumno2 lcc[10]){
             cout << "\t Nombre: " << lcc[l].nombre2 << endl;
             cout << "\t Semestre: " << lcc[l].sem2 << endl;
             cout << "\t Grupo: " << lcc[l].gpo2 << endl;
-            cout << "\t Número de telefono: " << lcc[l].telefono << endl;
+            cout << "\t NÃºmero de telefono: " << lcc[l].telefono << endl;
             cout << "\t Correo: " << lcc[l].correo << endl;
-            cout << "\t Número asignado: " << lcc[l].num_asig << endl;
+            cout << "\t NÃºmero asignado: " << lcc[l].num_asig << endl;
             break;
         } else {
             ba =  false;
         }
     }
     if(ba == false){
-        cout << endl << "   -> El número de cuenta que ingresaste no existe..." << endl;
+        cout << endl << "   -> El nÃºmero de cuenta que ingresaste no existe..." << endl;
     } else {
         cout << endl << "   -> Registro encontrado..." << endl;
     }
