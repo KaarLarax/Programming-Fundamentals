@@ -40,11 +40,11 @@ void conociendo_apuntadores()
 {
     int i=576;
     int *p;
-    p - &i;
+    p = &i;
 
     float e = 2.71727;
     float *q;
-    q - &e;
+    q = &e;
 
     char vocales[]={'A','E', 'I', 'O', 'U'};
     char *v;
