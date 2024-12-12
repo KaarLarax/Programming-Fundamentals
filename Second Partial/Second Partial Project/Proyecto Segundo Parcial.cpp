@@ -121,7 +121,7 @@ void password() {
         cout << "\t\t" << "Ingrese la contraseña ";
         SetConsoleTextAttribute(hConsole, 12); // Cambia de color el texto a rojo claro
         cin.getline(magicword, 13);
-        if (strcmp(pass, magicword) == 0) //compara las variables que almacenan cadenas para saber si son identicas
+        if (strcmp(pass, magicword) == 0) // Compara las variables que almacenan cadenas para saber si son identicas
         {
             SetConsoleTextAttribute(hConsole, 9);
             cout << "\t\t" << "Contraseña correcta" << endl;
