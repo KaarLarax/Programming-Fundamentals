@@ -25,13 +25,13 @@ void password (void)
     while(true)
     {
         SetConsoleTextAttribute(hConsole, 9); // Cambia de color el texto a azul oscuro
-        cout << "\t\t" << "Ingrese la contraseña ";
+        cout << "\t\t" << "Ingrese la contraseÃ±a ";
         SetConsoleTextAttribute(hConsole, 12); // Cambia de color el texto a rojo claro
         cin.getline(magicword,13);
         if (strcmp(pass,magicword) == 0) //compara las variables que almacenan cadenas para saber si son identicas
         {
             SetConsoleTextAttribute(hConsole, 9);
-            cout << "\t\t" << "Contraseña correcta" << endl;
+            cout << "\t\t" << "ContraseÃ±a correcta" << endl;
             SetConsoleTextAttribute(hConsole, 5);
             cout << "\t\t" << "Bienvenido" << endl << endl;
             Sleep(1000);
@@ -40,7 +40,7 @@ void password (void)
             else // Si las cadenas no son identicas el programa se cierra
             {
                 SetConsoleTextAttribute(hConsole, 8);
-                cout << "\t\t" << "Contraseña incorrecta" << endl;
+                cout << "\t\t" << "ContraseÃ±a incorrecta" << endl;
 
                 conpass --;
                 if (conpass <= 0)
@@ -59,12 +59,11 @@ bool askretorno(void)
 {
     char askreturn;
     SetConsoleTextAttribute(hConsole, 9);
-    cout << "\t\t" << "¿Usted desea reiniciar el progrma?" << endl;
+    cout << "\t\t" << "Â¿Usted desea reiniciar el progrma?" << endl;
     cout << "\t\t" << "Ingrese S para hacerlo" << endl;
     fflush(stdin);
     cout << "\t\t"; cin >> askreturn;
-    if (askreturn == 's' || askreturn == 'S')
-    {
+    if (askreturn == 's' || askreturn == 'S') {
         cout << "\t\t" << "Regresando" << endl;
         return true;
         genere_tiempo();
@@ -116,7 +115,7 @@ void genere_tiempo(void) // hacer un delay propio
 
 void Cconfig (void)
 {
-    setlocale(LC_CTYPE,"Spanish"); /// Cambia el idioma en español
+    setlocale(LC_CTYPE,"Spanish"); /// Cambia el idioma en espaÃ±ol
     system("cls");/// Limpia la consola
     system("color 0B");/// Cambia el color a cyan
 }
