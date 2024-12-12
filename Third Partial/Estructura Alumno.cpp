@@ -33,7 +33,7 @@ Alumno a,b,c;
 
 int main()
 {
-    setlocale(LC_CTYPE, "spanish"); // cambiar a español el idioma
+    setlocale(LC_CTYPE, "spanish"); // cambiar a espaÃ±ol el idioma
     SetConsoleCP(1252); // Cambiar STDIN
     SetConsoleOutputCP(1252); // Cambiar STDOUT
     //Inicializaciones de los valores de la estructura a
@@ -65,7 +65,7 @@ int main()
     muestra_info1(a);
     cout << endl;
     cout << "\t\t" << "------------------------------------" << endl;
-    cout << "\t\t" << "Tamaño en bytes de la estructura (a)" << sizeof(a) << endl;
+    cout << "\t\t" << "TamaÃ±o en bytes de la estructura (a)" << sizeof(a) << endl;
     cout << "\t\t" << "------------------------------------" << endl;
     system("pause");
     limpieza();
@@ -73,7 +73,7 @@ int main()
     muestra_info2(b);
     cout << endl;
     cout << "\t\t" << "------------------------------------" << endl;
-    cout << "\t\t" << "Tamaño en bytes de la estructura (b)" << sizeof(b) << endl;
+    cout << "\t\t" << "TamaÃ±o en bytes de la estructura (b)" << sizeof(b) << endl;
     cout << "\t\t" << "------------------------------------" << endl;
     system("pause");
     limpieza();
@@ -81,7 +81,7 @@ int main()
     muestra_info3(c);
     cout << endl;
     cout << "\t\t" << "------------------------------------" << endl;
-    cout << "\t\t" << "Tamaño en bytes de la estructura (c)" << sizeof(c) << endl;
+    cout << "\t\t" << "TamaÃ±o en bytes de la estructura (c)" << sizeof(c) << endl;
     cout << "\t\t" << "------------------------------------" << endl;
     system("pause");
     limpieza();
