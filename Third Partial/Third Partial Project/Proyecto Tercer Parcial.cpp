@@ -32,8 +32,8 @@ struct libro { // nombre de la estructura
     char fecha_compra[12];
 };
 
-struct libro programacion_c = {"ProgramaciÛn en C++", "Luis Joyanes A.", "McGrawHill", 2002, 350.0, "02/06/2005"};
-struct libro logicamatematica = {"Matem·ticas para computaciÛn", "JosÈ JimÈnez", "Alfaomega", 2010, 430.0, "10/03/2008"};
+struct libro programacion_c = {"Programaci√≥n en C++", "Luis Joyanes A.", "McGrawHill", 2002, 350.0, "02/06/2005"};
+struct libro logicamatematica = {"Matem√°ticas para computaci√≥n", "Jos√© Jim√©nez", "Alfaomega", 2010, 430.0, "10/03/2008"};
 
 int numeros[4][6]=  {{18, 10, 00, 02, 13, 11},
                      {50, 22, 27, 31, 12, 24},
@@ -97,7 +97,7 @@ int main() {
                 continue;
             default:
                 SetConsoleTextAttribute(hConsole, 12);
-                cout << "\t\t" << "La opcion seleccionanda no se encuentra en el men˙" << endl;
+                cout << "\t\t" << "La opcion seleccionanda no se encuentra en el men√∫" << endl;
                 cout << "\t\t" << "Intente nuevamente" << endl;
                 Sleep(400);
                 continue;
@@ -112,7 +112,7 @@ void mostrar_valores(struct libro *x) { // Se muestran los contenidos de la estr
     cout << "\t\t" << "Titulo: " << x->titulo << endl;
     cout << "\t\t" << "Autor: " << x->autor << endl;
     cout << "\t\t" << "Editorial: " << x->editorial << endl;
-    cout << "\t\t" << "AÒo: " << x->anyo << endl;
+    cout << "\t\t" << "A√±o: " << x->anyo << endl;
     cout << "\t\t" << "Precio del libro: " << x->precio << endl;
     cout << "\t\t" << "Fecha de compra: " << x->fecha_compra << endl;
     cout << "\t\t" << "*****************************************************" << endl << endl;
@@ -121,18 +121,18 @@ void mostrar_valores(struct libro *x) { // Se muestran los contenidos de la estr
 }
 
 void libro_mas_antiguo(struct libro *x, struct libro *y) { // Funcion para saber que libro es mas antiguo
-    if(x->anyo < y->anyo) { // Si el x valor del aÒo es menor que el aÒo de y valor
+    if(x->anyo < y->anyo) { // Si el x valor del a√±o es menor que el a√±o de y valor
         cout << "\t\t" << "El libro mas antiguo es: " << x->titulo << endl;
-        cout << "\t\t" << "AÒos de antiguedad: " << 2022 - (x->anyo) << endl;
-        // Se calcula e imprime los aÒos de antiguedad  del libro con respecto aÒo que se creo el programa
-    } else if(x->anyo == y->anyo) { // Si el y valor del aÒo es igual que el aÒo de x valor
-        cout << "\t\t" << "Los dos titulos fueron publicados el mismo aÒo: " << x->anyo << endl;
-        cout << "\t\t" << "AÒos de antiguedad: " << 2022 - (x->anyo) << endl;
-        // Se calcula e imprime los aÒos de antiguedad  del libro con respecto aÒo que se creo el programa
-    } else { // Si el y valor del aÒo es menor que el aÒo de x valor
+        cout << "\t\t" << "A√±os de antiguedad: " << 2022 - (x->anyo) << endl;
+        // Se calcula e imprime los a√±os de antiguedad  del libro con respecto a√±o que se creo el programa
+    } else if(x->anyo == y->anyo) { // Si el y valor del a√±o es igual que el a√±o de x valor
+        cout << "\t\t" << "Los dos titulos fueron publicados el mismo a√±o: " << x->anyo << endl;
+        cout << "\t\t" << "A√±os de antiguedad: " << 2022 - (x->anyo) << endl;
+        // Se calcula e imprime los a√±os de antiguedad  del libro con respecto a√±o que se creo el programa
+    } else { // Si el y valor del a√±o es menor que el a√±o de x valor
         cout << "\t\t" << "El libro mas antiguo es: " << y->titulo << endl;
-        cout << "\t\t" << "AÒos de antiguedad: " << 2022 - (y ->anyo) << endl;
-        // Se calcula e imprime los aÒos de antiguedad  del libro con respecto aÒo que se creo el programa
+        cout << "\t\t" << "A√±os de antiguedad: " << 2022 - (y ->anyo) << endl;
+        // Se calcula e imprime los a√±os de antiguedad  del libro con respecto a√±o que se creo el programa
     }
 }
 
@@ -141,7 +141,7 @@ bool askretorno() {
     char askreturn;
 
     cout << endl << endl;
-    cout << "\t\t" << "øUsted desea regresar al menu principal?" << endl;
+    cout << "\t\t" << "¬øUsted desea regresar al menu principal?" << endl;
     cout << "\t\t" << "Ingrese S para hacerlo" << endl;
 
     fflush(stdin); // Limpia el buffer del la entrada
@@ -181,8 +181,8 @@ void portada() { // Portada del programa
 
 void Cconfig () {
     system("cls"); // Limpia la consola
-    SetConsoleCP(1252); // Cambiar STDIN -  Para m·quinas Windows
-    SetConsoleOutputCP(1252); // Cambiar STDOUT - Para m·quinas Windows
+    SetConsoleCP(1252); // Cambiar STDIN -  Para m√°quinas Windows
+    SetConsoleOutputCP(1252); // Cambiar STDOUT - Para m√°quinas Windows
     system("color D"); // Cambia el color de la consola a purpura claro
 }
 
