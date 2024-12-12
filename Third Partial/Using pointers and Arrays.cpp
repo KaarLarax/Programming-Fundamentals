@@ -91,7 +91,7 @@ void arr_apuntadores()
     bool band;
     char *beatles[]={"JOHN LENON", "PAUL MCCARTNEY", "RINGO STAR", "GEORGE HARRISON"};
     char name_b[25];
-    puts("¿Recuerdas el nombre de un beatle? INGRESALO");
+    puts("Â¿Recuerdas el nombre de un beatle? INGRESALO");
     cin.getline(name_b, 25);
 
     for(int i=0; i<4; i++)
