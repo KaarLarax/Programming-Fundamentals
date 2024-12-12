@@ -56,7 +56,7 @@ int main()
         mostrar_arr2d(calificaciones);
         cout << endl;
          num_ac = aprobados(calificaciones);
-        cout << "\t" << "Número de calificaciones acreditadas: " << num_ac << endl;
+        cout << "\t" << "NÃºmero de calificaciones acreditadas: " << num_ac << endl;
          num_na = reprobados(calificaciones);
         cout << "\t" << "Numero de calificaciones reprobatorias: " << num_na << endl;
         cout << endl;
@@ -71,16 +71,16 @@ void password (void)
     char pass[15]={"Donnie Darko"};
     char magicword[15];
 
-    cout << "Ingrese la contraseña "; cin.getline(magicword,13);
+    cout << "Ingrese la contraseÃ±a "; cin.getline(magicword,13);
     if (strcmp(pass,magicword) == 0)
     {
-        cout << "Contraseña correcta" << endl;
+        cout << "ContraseÃ±a correcta" << endl;
         cout << "Bienvenido" << endl << endl;
         Sleep(1000);
     }
     else
     {
-        cout << "Contraseña incorrecta" << endl;
+        cout << "ContraseÃ±a incorrecta" << endl;
         exit(-1);
     }
 }
