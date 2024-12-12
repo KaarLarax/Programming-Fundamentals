@@ -32,7 +32,7 @@ struct info{ // Estructura anidada
 
 int main()
 {
-    setlocale(LC_CTYPE,"Spanish"); /// Cambia el idioma en español
+    setlocale(LC_CTYPE,"Spanish"); /// Cambia el idioma en espaÃ±ol
     system("cls");/// Limpia la consola
     system("color 0B");/// Cambia el color a cyan
     ver_info_arr(favoritos);
@@ -47,7 +47,7 @@ void ver_info_arr(struct Album favoritos[5])
         cout << endl << endl;
         cout << "\t" << "Mostrando la informacion de los album... " << endl << endl;
         cout << "++++++++++++++++++++++++++++++++++++++++++" << endl;
-        cout << "\t" << "Año de lanzamiento: " << favoritos[i].anio_lanza << endl;
+        cout << "\t" << "AÃ±o de lanzamiento: " << favoritos[i].anio_lanza << endl;
         cout << "\t" << "Interprete: " << favoritos[i].interprete << endl;
         cout << "\t" << "Nombre del album: " << favoritos[i].nombre_disco << endl;
         cout << "\t" << "Numero de canciones: " << favoritos[i].canciones << endl;
@@ -61,13 +61,13 @@ void ver_info_arr(struct Album favoritos[5])
 void busca_info(struct Album favoritos[5])
 {
     int year; bool band;
-    cout << "Ingrese el año de lanzamiento que quiere buscar: ";
+    cout << "Ingrese el aÃ±o de lanzamiento que quiere buscar: ";
     fflush(stdin);
     cin >> year; cout << endl << endl;
     for(int i=0; i<5; i++){
         if(year == favoritos[i].anio_lanza){
             cout << ".-.-.-.-.-.-.-.-.-.-.-.-.-" << endl;
-            cout << "\t" << "Año de lanzamiento: " << favoritos[i].anio_lanza << endl;
+            cout << "\t" << "AÃ±o de lanzamiento: " << favoritos[i].anio_lanza << endl;
             cout << "\t" << "Interprete: " << favoritos[i].interprete << endl;
             cout << "\t" << "Nombre del album: " << favoritos[i].nombre_disco << endl;
             cout << "\t" << "Numero de canciones: " << favoritos[i].canciones << endl;
