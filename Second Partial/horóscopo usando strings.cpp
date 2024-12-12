@@ -38,7 +38,7 @@ int main()
     cout << "La longitud de tu nombre es " << l << endl;
     if (l < 30)
     {
-        cout << "Tu nombre es peque�o" << endl;
+        cout << "Tu nombre es pequeño" << endl;
     }
         else
         {
@@ -70,7 +70,7 @@ void tu_signo(char signo_zodiacal[35])
 
 if(strcmp(signo_zodiacal,"aries") == 0)
 {
-    puts("Los Aries son, de todos los signos, los que m�s c�modos se sienten comenzando nuevos proyectos.");
+    puts("Los Aries son, de todos los signos, los que más cómodos se sienten comenzando nuevos proyectos.");
     cout << endl;
     puts("Por su forma de actuar arrebatada, a veces pueden resultar algo tercas e incluso agresivas.");
     cout << endl;
@@ -78,14 +78,14 @@ if(strcmp(signo_zodiacal,"aries") == 0)
     else if(strcmp(signo_zodiacal,"tauro") == 0)
     {
         puts(" Los nacidos bajo este signo no se andan con chiquitas,");
-        puts(" lo suyo no son las aventuras y los romances breves: s�lo se conformar�n con su alma gemela.");
+        puts(" lo suyo no son las aventuras y los romances breves: sólo se conformarán con su alma gemela.");
         cout << endl;
     }
         else if(strcmp(signo_zodiacal,"geminis") == 0)
             {
             puts(" ingeniosas, inteligentes, generosas, independientes, creativas, vitales, con mucha capacidad de resiliencia");
             cout<<endl;
-            puts("pueden sufrir cambios de humor además de caer facilmente en continuas contradicciones");
+            puts("pueden sufrir cambios de humor ademÃ¡s de caer facilmente en continuas contradicciones");
             cout<<endl;
         }
             else if(strcmp(signo_zodiacal,"cancer") == 0)
@@ -130,7 +130,7 @@ if(strcmp(signo_zodiacal,"aries") == 0)
                                 }
                                     else if(strcmp(signo_zodiacal,"capricornio") == 0)
                                     {
-                                        puts(" sus características son el trabajo duro, la fiabilidad, la prudencia, la practicidad, la ambicion y la justicia ");
+                                        puts(" sus caracterÃ­sticas son el trabajo duro, la fiabilidad, la prudencia, la practicidad, la ambicion y la justicia ");
                                         cout << endl;
                                         puts("la melancolia y el pesimismo pueden ser sus dos grandes enemigos para alcanzar la felicidad");
                                         cout << endl;
@@ -139,12 +139,12 @@ if(strcmp(signo_zodiacal,"aries") == 0)
                                         {
                                             puts(" son simpaticos, divertidos, originales, idealistas y con sentido del humor");
                                             cout << endl;
-                                            puts("so�adores, imaginativos, honestos, leales, tolerantes y sin prejuicios");
+                                            puts("soñadores, imaginativos, honestos, leales, tolerantes y sin prejuicios");
                                             cout << endl;
                                         }
                                             else if(strcmp(signo_zodiacal,"piscis") == 0)
                                             {
-                                                puts(" son creativios,tienen imaginacion,sensibles, amables, intituitivos, empaticos, pacientes y con facilidad para so�ar");
+                                                puts(" son creativios,tienen imaginacion,sensibles, amables, intituitivos, empaticos, pacientes y con facilidad para soñar");
                                                 cout << endl;
                                                 puts("suelen ser personas tranquilas, evitan meterse en problemas e incluso les cuesta rebelarse ante algunas injusticias");
                                                 cout << endl;
@@ -170,7 +170,7 @@ void edad_persona (char X[45], char Y[35], int Z)
  cout << "Usuario: " << X << "\n" << "Signo Zodiacal: " << Y << "\n" << "Edad: " << Z << endl;
  if(Z <= 12)
  {
-     cout << "Te encuentras en la ni�ez \n";
+     cout << "Te encuentras en la niñez \n";
      cout << "Te recomiendo Leer" << endl;
  }
      else if(Z > 12 && Z < 18)
@@ -199,7 +199,7 @@ void edad_persona (char X[45], char Y[35], int Z)
 
 void Cconfig (void)
 {
-    setlocale(LC_CTYPE,"Spanish"); // Cambia el idioma en espa�ol
+    setlocale(LC_CTYPE,"Spanish"); // Cambia el idioma en español
     system("cls"); // Limpia la consola
     system("color 0B"); // Cambia el color a cyan
 }
