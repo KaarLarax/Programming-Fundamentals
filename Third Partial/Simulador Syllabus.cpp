@@ -142,7 +142,7 @@ void muestra_info2(struct Alumno b){
 void pedir_info(){
     cout << "   Nombre: "; cin.getline(c.nombre, 50);
     cout << "   Fecha de ingreso: "; cin.getline(c.fecha_ing, 15);
-    cout << "   Número de cuenta: "; cin >> c.ncuenta;
+    cout << "   NÃºmero de cuenta: "; cin >> c.ncuenta;
     cout << "   Semestre: "; cin >> c.sem;
     cout << "   Grupo: "; cin >> c.gpo;
     cout << "   Promedio 1P: "; cin >> c.prom_p1;
@@ -169,28 +169,28 @@ void syllabus(struct Alumno a, struct Alumno b, struct Alumno c){
     prom_b = ((b.prom_p1*0.3)+(b.prom_p2*0.3)+(b.prom_p3*0.4));
     prom_c = ((c.prom_p1*0.3)+(c.prom_p2*0.3)+(c.prom_p3*0.4));
 
-    cout << " Promedios sin redondear, para calificación..." << endl;
+    cout << " Promedios sin redondear, para calificaciÃ³n..." << endl;
     cout << " -> Promedio (a): " << prom_a << endl;
     cout << " -> Promedio (b): " << prom_b << endl;
     cout << " -> Promedio (c): " << prom_c << endl;
 
-    cout << " Promedios redondeados, para calificación..." << endl;
+    cout << " Promedios redondeados, para calificaciÃ³n..." << endl;
     cout << " -> Promedio (a): " << round(prom_a) << endl;
     cout << " -> Promedio (b): " << round(prom_b) << endl;
     cout << " -> Promedio (c): " << round(prom_c) << endl;
 
     if(round(prom_a) >= 7){
-        cout << " El Alumno " << a.nombre << " acreditó el semestre :D" << endl;
+        cout << " El Alumno " << a.nombre << " acreditÃ³ el semestre :D" << endl;
     } else {
-        cout << " El Alumno " << a.nombre << " NO acreditó el semestre :c" << endl;
+        cout << " El Alumno " << a.nombre << " NO acreditÃ³ el semestre :c" << endl;
     }if(round(prom_b) >= 7){
-        cout << " El Alumno " << b.nombre << " acreditó el semestre :D" << endl;
+        cout << " El Alumno " << b.nombre << " acreditÃ³ el semestre :D" << endl;
     } else {
-        cout << " El Alumno " << b.nombre << " NO acreditó el semestre :c" << endl;
+        cout << " El Alumno " << b.nombre << " NO acreditÃ³ el semestre :c" << endl;
     }if(round(prom_c) >= 7){
-        cout << " El Alumno " << c.nombre << " acreditó el semestre :D" << endl;
+        cout << " El Alumno " << c.nombre << " acreditÃ³ el semestre :D" << endl;
     } else {
-        cout << " El Alumno " << c.nombre << " NO acreditó el semestre :c" << endl;
+        cout << " El Alumno " << c.nombre << " NO acreditÃ³ el semestre :c" << endl;
     }
 }
 
@@ -209,17 +209,17 @@ void tamanyo(struct Alumno a){
 
 void tam_nombre(struct Alumno a, struct Alumno b, struct Alumno c){
     if(strlen(a.nombre) > strlen(b.nombre)){
-        cout << " El nombre más largo es: " << a.nombre << endl;
+        cout << " El nombre mÃ¡s largo es: " << a.nombre << endl;
     } else if(strlen(a.nombre) == strlen(b.nombre)){
-        cout << " Los nombres de " << a.nombre << " y " << b.nombre << " son los más largos..." << endl;
+        cout << " Los nombres de " << a.nombre << " y " << b.nombre << " son los mÃ¡s largos..." << endl;
     } if(strlen(b.nombre) > strlen(c.nombre)){
-        cout << " El nombre más largo es: " << b.nombre << endl;
+        cout << " El nombre mÃ¡s largo es: " << b.nombre << endl;
     } else if(strlen(b.nombre) == strlen(c.nombre)){
-        cout << " Los nombres de " << b.nombre << " y " << c.nombre << " son los más largos..." << endl;
+        cout << " Los nombres de " << b.nombre << " y " << c.nombre << " son los mÃ¡s largos..." << endl;
     } if (strlen(c.nombre) > strlen(b.nombre)){
-        cout << " El nombre más largo es: " << c.nombre << endl;
+        cout << " El nombre mÃ¡s largo es: " << c.nombre << endl;
     } else if(strlen(a.nombre) == strlen(c.nombre)){
-        cout << "Los nombres de " << a.nombre << " y " << c.nombre << " son los más largos..." << endl;
+        cout << "Los nombres de " << a.nombre << " y " << c.nombre << " son los mÃ¡s largos..." << endl;
     }
 }
 
@@ -234,9 +234,9 @@ void mayor_edad(struct Alumno a, struct Alumno b, struct Alumno c){
 }
 
 void calcula_anyo_nac(struct Alumno a, struct Alumno b, struct Alumno c){
-    cout << "   El alumno " << a.nombre << " nació en el " << 2022-a.edad << endl;
-    cout << "   El alumno " << b.nombre << " nació en el " << 2022-b.edad << endl;
-    cout << "   El alumno " << c.nombre << " nació en el " << 2022-c.edad << endl;
+    cout << "   El alumno " << a.nombre << " naciÃ³ en el " << 2022-a.edad << endl;
+    cout << "   El alumno " << b.nombre << " naciÃ³ en el " << 2022-b.edad << endl;
+    cout << "   El alumno " << c.nombre << " naciÃ³ en el " << 2022-c.edad << endl;
 }
 
 void ver_info_arr(struct Alumno2 lcc[5])
