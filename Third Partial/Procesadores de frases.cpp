@@ -13,7 +13,7 @@ using namespace std;
 int main()
 {
     char frase[200];
-    setlocale(LC_CTYPE, "spanish"); // cambiar a español el idioma
+    setlocale(LC_CTYPE, "spanish"); // cambiar a espaÃ±ol el idioma
     SetConsoleCP(1252); // Cambiar STDIN
     SetConsoleOutputCP(1252); // Cambiar STDOUT
     system("color 4");
