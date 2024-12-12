@@ -10,8 +10,7 @@ double tiempo, costo;
 
 using namespace std;
 
-int main()
-{///inicia el programa
+int main() {///inicia el programa
     setlocale(LC_CTYPE, "Spanish" ); ///cambiar la region a español
     system( "color 0B" ); ///cambiar el color de la consola
 
