@@ -72,17 +72,17 @@ void ver_info(struct Alumno *ptr1)
 void pedir_info_w(void)
 {
     struct Alumno *ptr3 = &W;
-    cout<<"\t"<<"\t"<<"\t"<<"\t"<<"~×~×~×~×~×~×~×~×~×~×~×~×~×~×~×~×~×~×~×~×~×~×~×~×~×~"<<endl;
-    cout<<"\t"<<"\t"<<"\t"<<"\t"<<"~×~              ENTRADA DEL ALUMNO W           ~×~"<<endl;
-    cout<<"\t"<<"\t"<<"\t"<<"\t"<<"~×~×~×~×~×~×~×~×~×~×~×~×~×~×~×~×~×~×~×~×~×~×~×~×~×~"<<endl<<endl;
+    cout<<"\t"<<"\t"<<"\t"<<"\t"<<"~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~"<<endl;
+    cout<<"\t"<<"\t"<<"\t"<<"\t"<<"~Ã—~              ENTRADA DEL ALUMNO W           ~Ã—~"<<endl;
+    cout<<"\t"<<"\t"<<"\t"<<"\t"<<"~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~Ã—~"<<endl<<endl;
 
-    cout<<"~×~ Nombre: "; cin.getline(ptr3->nombre,50); cout<<endl;
-    cout<<"~×~ Fecha de ingreso (DD/MM/AAAA): "; cin.getline(ptr3->fecha_ing,15); cout<<endl;
-    cout<<"~×~ Numero de cuenta: "; cin>>ptr3->ncuenta; cout<<endl;
-    cout<<"~×~ Semestre: "; cin>>ptr3->sem; cout<<endl;
-    cout<<"~×~ Grupo: "; cin>>ptr3->gpo; cout<<endl;
-    cout<<"~×~ Promedio: "; cin>>ptr3->promedio; cout<<endl;
-    cout<<"~×~ Edad: "; cin>>ptr3->edad; cout<<endl<<endl;
+    cout<<"~Ã—~ Nombre: "; cin.getline(ptr3->nombre,50); cout<<endl;
+    cout<<"~Ã—~ Fecha de ingreso (DD/MM/AAAA): "; cin.getline(ptr3->fecha_ing,15); cout<<endl;
+    cout<<"~Ã—~ Numero de cuenta: "; cin>>ptr3->ncuenta; cout<<endl;
+    cout<<"~Ã—~ Semestre: "; cin>>ptr3->sem; cout<<endl;
+    cout<<"~Ã—~ Grupo: "; cin>>ptr3->gpo; cout<<endl;
+    cout<<"~Ã—~ Promedio: "; cin>>ptr3->promedio; cout<<endl;
+    cout<<"~Ã—~ Edad: "; cin>>ptr3->edad; cout<<endl<<endl;
 }
 
 void division(double *p, double *q)
